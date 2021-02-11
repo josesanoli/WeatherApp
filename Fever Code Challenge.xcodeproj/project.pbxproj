@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9117443725D5BAAE003F836C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117443625D5BAAE003F836C /* AppDelegate.swift */; };
+		9117443925D5BAAE003F836C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117443825D5BAAE003F836C /* SceneDelegate.swift */; };
+		9117443B25D5BAAE003F836C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117443A25D5BAAE003F836C /* ViewController.swift */; };
+		9117443E25D5BAAE003F836C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9117443C25D5BAAE003F836C /* Main.storyboard */; };
+		9117444025D5BAB0003F836C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9117443F25D5BAB0003F836C /* Assets.xcassets */; };
+		9117444325D5BAB0003F836C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9117444125D5BAB0003F836C /* LaunchScreen.storyboard */; };
+		9117444E25D5BAB0003F836C /* Fever_Code_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117444D25D5BAB0003F836C /* Fever_Code_ChallengeTests.swift */; };
+		9117445925D5BAB1003F836C /* Fever_Code_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117445825D5BAB1003F836C /* Fever_Code_ChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9117444A25D5BAB0003F836C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9117442B25D5BAAE003F836C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9117443225D5BAAE003F836C;
+			remoteInfo = "Fever Code Challenge";
+		};
+		9117445525D5BAB1003F836C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9117442B25D5BAAE003F836C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9117443225D5BAAE003F836C;
+			remoteInfo = "Fever Code Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9117443325D5BAAE003F836C /* Fever Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fever Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9117443625D5BAAE003F836C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9117443825D5BAAE003F836C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9117443A25D5BAAE003F836C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9117443D25D5BAAE003F836C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9117443F25D5BAB0003F836C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9117444225D5BAB0003F836C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9117444425D5BAB0003F836C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9117444925D5BAB0003F836C /* Fever Code ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fever Code ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9117444D25D5BAB0003F836C /* Fever_Code_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fever_Code_ChallengeTests.swift; sourceTree = "<group>"; };
+		9117444F25D5BAB0003F836C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9117445425D5BAB1003F836C /* Fever Code ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fever Code ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9117445825D5BAB1003F836C /* Fever_Code_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fever_Code_ChallengeUITests.swift; sourceTree = "<group>"; };
+		9117445A25D5BAB1003F836C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9117443025D5BAAE003F836C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9117444625D5BAB0003F836C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9117445125D5BAB1003F836C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9117442A25D5BAAE003F836C = {
+			isa = PBXGroup;
+			children = (
+				9117443525D5BAAE003F836C /* Fever Code Challenge */,
+				9117444C25D5BAB0003F836C /* Fever Code ChallengeTests */,
+				9117445725D5BAB1003F836C /* Fever Code ChallengeUITests */,
+				9117443425D5BAAE003F836C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9117443425D5BAAE003F836C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9117443325D5BAAE003F836C /* Fever Code Challenge.app */,
+				9117444925D5BAB0003F836C /* Fever Code ChallengeTests.xctest */,
+				9117445425D5BAB1003F836C /* Fever Code ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9117443525D5BAAE003F836C /* Fever Code Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				9117443625D5BAAE003F836C /* AppDelegate.swift */,
+				9117443825D5BAAE003F836C /* SceneDelegate.swift */,
+				9117443A25D5BAAE003F836C /* ViewController.swift */,
+				9117443C25D5BAAE003F836C /* Main.storyboard */,
+				9117443F25D5BAB0003F836C /* Assets.xcassets */,
+				9117444125D5BAB0003F836C /* LaunchScreen.storyboard */,
+				9117444425D5BAB0003F836C /* Info.plist */,
+			);
+			path = "Fever Code Challenge";
+			sourceTree = "<group>";
+		};
+		9117444C25D5BAB0003F836C /* Fever Code ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9117444D25D5BAB0003F836C /* Fever_Code_ChallengeTests.swift */,
+				9117444F25D5BAB0003F836C /* Info.plist */,
+			);
+			path = "Fever Code ChallengeTests";
+			sourceTree = "<group>";
+		};
+		9117445725D5BAB1003F836C /* Fever Code ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9117445825D5BAB1003F836C /* Fever_Code_ChallengeUITests.swift */,
+				9117445A25D5BAB1003F836C /* Info.plist */,
+			);
+			path = "Fever Code ChallengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9117443225D5BAAE003F836C /* Fever Code Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9117445D25D5BAB1003F836C /* Build configuration list for PBXNativeTarget "Fever Code Challenge" */;
+			buildPhases = (
+				9117442F25D5BAAE003F836C /* Sources */,
+				9117443025D5BAAE003F836C /* Frameworks */,
+				9117443125D5BAAE003F836C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fever Code Challenge";
+			productName = "Fever Code Challenge";
+			productReference = 9117443325D5BAAE003F836C /* Fever Code Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9117444825D5BAB0003F836C /* Fever Code ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9117446025D5BAB1003F836C /* Build configuration list for PBXNativeTarget "Fever Code ChallengeTests" */;
+			buildPhases = (
+				9117444525D5BAB0003F836C /* Sources */,
+				9117444625D5BAB0003F836C /* Frameworks */,
+				9117444725D5BAB0003F836C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9117444B25D5BAB0003F836C /* PBXTargetDependency */,
+			);
+			name = "Fever Code ChallengeTests";
+			productName = "Fever Code ChallengeTests";
+			productReference = 9117444925D5BAB0003F836C /* Fever Code ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9117445325D5BAB1003F836C /* Fever Code ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9117446325D5BAB1003F836C /* Build configuration list for PBXNativeTarget "Fever Code ChallengeUITests" */;
+			buildPhases = (
+				9117445025D5BAB1003F836C /* Sources */,
+				9117445125D5BAB1003F836C /* Frameworks */,
+				9117445225D5BAB1003F836C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9117445625D5BAB1003F836C /* PBXTargetDependency */,
+			);
+			name = "Fever Code ChallengeUITests";
+			productName = "Fever Code ChallengeUITests";
+			productReference = 9117445425D5BAB1003F836C /* Fever Code ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9117442B25D5BAAE003F836C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					9117443225D5BAAE003F836C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					9117444825D5BAB0003F836C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 9117443225D5BAAE003F836C;
+					};
+					9117445325D5BAB1003F836C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 9117443225D5BAAE003F836C;
+					};
+				};
+			};
+			buildConfigurationList = 9117442E25D5BAAE003F836C /* Build configuration list for PBXProject "Fever Code Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9117442A25D5BAAE003F836C;
+			productRefGroup = 9117443425D5BAAE003F836C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9117443225D5BAAE003F836C /* Fever Code Challenge */,
+				9117444825D5BAB0003F836C /* Fever Code ChallengeTests */,
+				9117445325D5BAB1003F836C /* Fever Code ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9117443125D5BAAE003F836C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9117444325D5BAB0003F836C /* LaunchScreen.storyboard in Resources */,
+				9117444025D5BAB0003F836C /* Assets.xcassets in Resources */,
+				9117443E25D5BAAE003F836C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9117444725D5BAB0003F836C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9117445225D5BAB1003F836C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9117442F25D5BAAE003F836C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9117443B25D5BAAE003F836C /* ViewController.swift in Sources */,
+				9117443725D5BAAE003F836C /* AppDelegate.swift in Sources */,
+				9117443925D5BAAE003F836C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9117444525D5BAB0003F836C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9117444E25D5BAB0003F836C /* Fever_Code_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9117445025D5BAB1003F836C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9117445925D5BAB1003F836C /* Fever_Code_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9117444B25D5BAB0003F836C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9117443225D5BAAE003F836C /* Fever Code Challenge */;
+			targetProxy = 9117444A25D5BAB0003F836C /* PBXContainerItemProxy */;
+		};
+		9117445625D5BAB1003F836C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9117443225D5BAAE003F836C /* Fever Code Challenge */;
+			targetProxy = 9117445525D5BAB1003F836C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9117443C25D5BAAE003F836C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9117443D25D5BAAE003F836C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9117444125D5BAB0003F836C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9117444225D5BAB0003F836C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9117445B25D5BAB1003F836C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9117445C25D5BAB1003F836C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9117445E25D5BAB1003F836C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Fever Code Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jolusan.Fever-Code-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9117445F25D5BAB1003F836C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Fever Code Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jolusan.Fever-Code-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9117446125D5BAB1003F836C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Fever Code ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jolusan.Fever-Code-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fever Code Challenge.app/Fever Code Challenge";
+			};
+			name = Debug;
+		};
+		9117446225D5BAB1003F836C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Fever Code ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jolusan.Fever-Code-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fever Code Challenge.app/Fever Code Challenge";
+			};
+			name = Release;
+		};
+		9117446425D5BAB1003F836C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Fever Code ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jolusan.Fever-Code-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fever Code Challenge";
+			};
+			name = Debug;
+		};
+		9117446525D5BAB1003F836C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Fever Code ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jolusan.Fever-Code-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fever Code Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9117442E25D5BAAE003F836C /* Build configuration list for PBXProject "Fever Code Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9117445B25D5BAB1003F836C /* Debug */,
+				9117445C25D5BAB1003F836C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9117445D25D5BAB1003F836C /* Build configuration list for PBXNativeTarget "Fever Code Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9117445E25D5BAB1003F836C /* Debug */,
+				9117445F25D5BAB1003F836C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9117446025D5BAB1003F836C /* Build configuration list for PBXNativeTarget "Fever Code ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9117446125D5BAB1003F836C /* Debug */,
+				9117446225D5BAB1003F836C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9117446325D5BAB1003F836C /* Build configuration list for PBXNativeTarget "Fever Code ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9117446425D5BAB1003F836C /* Debug */,
+				9117446525D5BAB1003F836C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9117442B25D5BAAE003F836C /* Project object */;
+}
