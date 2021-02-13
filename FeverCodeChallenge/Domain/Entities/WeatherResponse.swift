@@ -21,6 +21,7 @@ struct WeatherResponse: Codable {
     let timezone, id: Int
     let name: String
     let cod: Int
+    let message: String?
 }
 
 // MARK: - Clouds
@@ -30,7 +31,7 @@ struct Clouds: Codable {
 
 // MARK: - Coord
 struct Coord: Codable {
-    let lon, lat: Double
+    let lat, lon: Double
 }
 
 // MARK: - Main
@@ -58,4 +59,14 @@ struct Weather: Codable {
 struct Wind: Codable {
     let speed: Double
     let deg: Int
+}
+
+// MARK: - API response code
+struct WeatherAPIResponseCode: Codable {
+    let cod: Int
+}
+
+// MARK: - API response code
+struct WeatherAPIResponseMessage: Codable {
+    let message: String?
 }

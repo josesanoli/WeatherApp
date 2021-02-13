@@ -7,16 +7,24 @@
 
 import Foundation
 
-public enum NetworkError: Error {
-    case error(statusCode: Int, data: Data?)
+public enum NetworkError: Error, Equatable {
+    case error(statusCode: Int, message: String?)
     case notConnected
     case cancelled
     case generic(Error)
     case urlGeneration
-    case jsonError
+    case decodeError
+    
+    public static func == (lhs: NetworkError, rhs: NetworkError) -> Bool {
+        return true
+    }
 }
 
-public final class NetworkService {
+protocol NetworkService {
+    func request(request: URLRequest, completion: @escaping (Result<Data?, NetworkError>) -> Void)
+}
+
+public final class NetworkServiceImpl: NetworkService {
     
     public func request(request: URLRequest, completion: @escaping (Result<Data?, NetworkError>) -> Void) {
         
@@ -26,7 +34,7 @@ public final class NetworkService {
             if let requestError = requestError {
                 var error: NetworkError
                 if let response = response as? HTTPURLResponse {
-                    error = .error(statusCode: response.statusCode, data: data)
+                    error = .error(statusCode: response.statusCode, message: data?.description)
                 } else {
                     error = self.resolve(error: requestError)
                 }

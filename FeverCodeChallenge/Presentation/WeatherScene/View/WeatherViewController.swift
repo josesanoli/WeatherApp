@@ -59,19 +59,25 @@ final class WeatherViewController: UIViewController, StoryboardInstantiable {
     }
     
     private func updateItems() {
-        cityLabel.text = viewModel.weatherData.value?.name
-        latitudeLabel.text = viewModel.weatherData.value?.coord.lat.toString()
-        longitudeLabel.text = viewModel.weatherData.value?.coord.lon.toString()
-        weatherDescriptionLabel.text = viewModel.weatherData.value?.weather[0].description
-        temperatureLabel.text = viewModel.weatherData.value?.main.temp.kelvinToCelsius()
-        cloudsLabel.text = viewModel.weatherData.value?.clouds.all.toString()
-        humidityLabel.text = viewModel.weatherData.value?.main.humidity.toString()
+        cityLabel.text = viewModel.weatherData.value?.city
+        latitudeLabel.text = viewModel.weatherData.value?.lat.toString()
+        longitudeLabel.text = viewModel.weatherData.value?.lon.toString()
+        weatherDescriptionLabel.text = viewModel.weatherData.value?.description.capitalizingFirstLetter()
+        temperatureLabel.text = viewModel.weatherData.value?.temp.kelvinToCelsius()
+        cloudsLabel.text = viewModel.weatherData.value?.clouds.toString()
+        humidityLabel.text = viewModel.weatherData.value?.humidity.toString()
         
     }
     
     private func showError(_ error: String) {
         guard !error.isEmpty else { return }
-        cityLabel.text = viewModel.error.value
+        cityLabel.text = "-"
+        latitudeLabel.text = "-"
+        longitudeLabel.text = "-"
+        weatherDescriptionLabel.text = "-"
+        temperatureLabel.text = "-"
+        cloudsLabel.text = "-"
+        humidityLabel.text = "-"
     }
 }
 

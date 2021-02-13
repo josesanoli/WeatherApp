@@ -13,7 +13,6 @@ protocol GetLocationUseCase {
 
 final class GetLocationUseCaseImpl: GetLocationUseCase {
     
-    
     private let randomLocationRepository: RandomLocationRepository
     
     init(randomLocationRepository: RandomLocationRepository) {
@@ -26,5 +25,4 @@ final class GetLocationUseCaseImpl: GetLocationUseCase {
         })
     }
     
-
 }

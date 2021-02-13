@@ -13,7 +13,7 @@ protocol WeatherViewModelInput {
 }
 
 protocol WeatherViewModelOutput {
-    var weatherData: Observable<WeatherResponse?> { get }
+    var weatherData: Observable<WeatherData?> { get }
     var error: Observable<String> { get }
 }
 
@@ -26,20 +26,23 @@ final class WeatherViewModelImpl: WeatherViewModel {
     
     // MARK: - OUTPUT
 
-    let weatherData: Observable<WeatherResponse?> = Observable(.none)
+    let weatherData: Observable<WeatherData?> = Observable(.none)
     let error: Observable<String> = Observable("")
     
     // MARK: - Init
 
     init(fetchWeatherUseCase: FetchWeatherUseCase, getLocationUseCase: GetLocationUseCase) {
+        
         self.fetchWeatherUseCase = fetchWeatherUseCase
         self.getLocationUseCase = getLocationUseCase
+        
     }
     
     
     // MARK: - Private
 
     private func getLocation() {
+        
         getLocationUseCase.getRandomLocation(completion: { result in
             self.getWeather(location: result)
         })
@@ -47,6 +50,7 @@ final class WeatherViewModelImpl: WeatherViewModel {
     }
     
     private func getWeather(location: LocationCoordinates) {
+        
         fetchWeatherUseCase.getLocationWeather(requestValue: location, completion: { [weak self] result in
             DispatchQueue.main.async {
                 //Update result
@@ -60,7 +64,6 @@ final class WeatherViewModelImpl: WeatherViewModel {
         })
     }
     
-    
 }
 
 // MARK: - INPUT. View event methods
@@ -68,7 +71,8 @@ final class WeatherViewModelImpl: WeatherViewModel {
 extension WeatherViewModelImpl {
     
     func getNewLocation() {
-        //New location pressed
+        //New location button pressed
         getLocation()
+        
     }
 }

@@ -33,11 +33,16 @@ final class WeatherSceneDIContainer {
     
     // MARK: - Repositories
     func makeWeatherAPIRepository() -> WeatherAPIRepository {
-        return WeatherAPIRepositoryImpl()
+        return WeatherAPIRepositoryImpl(networkService: makeNetworkService())
     }
     
     func makeRandomLocationRepository() -> RandomLocationRepository {
         return RandomLocationRepositoryImpl()
+    }
+    
+    // MARK: - NetwokServices
+    func makeNetworkService() -> NetworkService {
+        return NetworkServiceImpl()
     }
     
     // MARK: - Flow Coordinators
