@@ -11,6 +11,12 @@ final class WeatherViewController: UIViewController, StoryboardInstantiable {
 
     
     @IBOutlet private weak var cityLabel: UILabel!
+    @IBOutlet private weak var latitudeLabel: UILabel!
+    @IBOutlet private weak var longitudeLabel: UILabel!
+    @IBOutlet private weak var weatherDescriptionLabel: UILabel!
+    @IBOutlet private weak var temperatureLabel: UILabel!
+    @IBOutlet private weak var cloudsLabel: UILabel!
+    @IBOutlet private weak var humidityLabel: UILabel!
     @IBOutlet private weak var newLocationButton: Button!
     
     private var viewModel: WeatherViewModel!
@@ -30,7 +36,11 @@ final class WeatherViewController: UIViewController, StoryboardInstantiable {
             bind(to: vm)
         }
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
 
     private func bind(to viewModel: WeatherViewModel) {
         viewModel.weatherData.observe(on: self) { [weak self] _ in self?.updateItems() }
@@ -50,6 +60,13 @@ final class WeatherViewController: UIViewController, StoryboardInstantiable {
     
     private func updateItems() {
         cityLabel.text = viewModel.weatherData.value?.name
+        latitudeLabel.text = viewModel.weatherData.value?.coord.lat.toString()
+        longitudeLabel.text = viewModel.weatherData.value?.coord.lon.toString()
+        weatherDescriptionLabel.text = viewModel.weatherData.value?.weather[0].description
+        temperatureLabel.text = viewModel.weatherData.value?.main.temp.kelvinToCelsius()
+        cloudsLabel.text = viewModel.weatherData.value?.clouds.all.toString()
+        humidityLabel.text = viewModel.weatherData.value?.main.humidity.toString()
+        
     }
     
     private func showError(_ error: String) {

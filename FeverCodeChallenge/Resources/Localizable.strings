@@ -8,3 +8,4 @@
 
 
 "new_location_button_text" = "New location";
+"location_far_from_any_named_place" = "Location without name";

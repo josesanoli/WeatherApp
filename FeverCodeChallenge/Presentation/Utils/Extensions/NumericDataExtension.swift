@@ -1,5 +1,5 @@
 //
-//  DoubleExtension.swift
+//  NumericDataExtension.swift
 //  FeverCodeChallenge
 //
 //  Created by Jose Luis Sánchez on 13/2/21.
@@ -20,5 +20,15 @@ public extension Double {
     /// - Returns:      Returns a random double point number between 0 and n max
     static func random(min: Double, max: Double) -> Double {
         return Double.random * (max - min) + min
+    }
+    
+    func toString() -> String {
+        return String(format: "%.4f",self)
+    }
+}
+
+public extension Int {
+    func toString() -> String {
+        return String(self)
     }
 }

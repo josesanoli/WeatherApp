@@ -9,7 +9,7 @@ import Foundation
 
 protocol FetchWeatherUseCase {
     func getLocationWeather(requestValue: LocationCoordinates,
-                            completion: @escaping (Result<WeatherResponse, Error>) -> Void)
+                            completion: @escaping (Result<WeatherResponse, NetworkError>) -> Void)
 }
 
 final class FetchWeatherUseCaseImpl: FetchWeatherUseCase {
@@ -21,7 +21,7 @@ final class FetchWeatherUseCaseImpl: FetchWeatherUseCase {
         self.fetchWeatherRepository = fetchWeatherRepository
     }
     
-    func getLocationWeather(requestValue: LocationCoordinates, completion: @escaping (Result<WeatherResponse, Error>) -> Void) {
+    func getLocationWeather(requestValue: LocationCoordinates, completion: @escaping (Result<WeatherResponse, NetworkError>) -> Void) {
         return fetchWeatherRepository.getLocationWeather(latitude: requestValue.latitude,
                                                 longitude: requestValue.longitude,
                                                 completion: { result in
