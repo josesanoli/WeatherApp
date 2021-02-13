@@ -15,21 +15,17 @@ protocol FetchWeatherUseCase {
 final class FetchWeatherUseCaseImpl: FetchWeatherUseCase {
     
     
-    private let repository: WeatherAPIRepository
+    private let fetchWeatherRepository: WeatherAPIRepository
     
-    init(repository: WeatherAPIRepository) {
-        self.repository = repository
+    init(fetchWeatherRepository: WeatherAPIRepository) {
+        self.fetchWeatherRepository = fetchWeatherRepository
     }
     
     func getLocationWeather(requestValue: LocationCoordinates, completion: @escaping (Result<WeatherResponse, Error>) -> Void) {
-        return repository.getLocationWeather(latitude: requestValue.latitude,
+        return fetchWeatherRepository.getLocationWeather(latitude: requestValue.latitude,
                                                 longitude: requestValue.longitude,
                                                 completion: { result in
-
-
             completion(result)
         })
     }
-    
-
 }

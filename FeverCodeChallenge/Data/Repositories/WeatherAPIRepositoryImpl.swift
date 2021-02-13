@@ -26,6 +26,7 @@ final class WeatherAPIRepositoryImpl: WeatherAPIRepository {
                 let weatherData = try decoder.decode(WeatherResponse.self, from: data!)
                 completion(.success(weatherData))
             } catch {
+                print(error)
                 completion(.failure(NSError(domain: "Unable to parse action", code: 1)))
             }
         })

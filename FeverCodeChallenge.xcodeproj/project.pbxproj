@@ -32,6 +32,10 @@
 		9117453A25D724C7003F836C /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117453925D724C7003F836C /* AppFlowCoordinator.swift */; };
 		9117453F25D724EC003F836C /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117453E25D724EC003F836C /* AppDIContainer.swift */; };
 		9117454425D7303D003F836C /* WeatherFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117454325D7303D003F836C /* WeatherFlowCoordinator.swift */; };
+		9117456225D75E7F003F836C /* GetLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117456125D75E7F003F836C /* GetLocationUseCase.swift */; };
+		9117456725D75FD6003F836C /* RandomLocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117456625D75FD6003F836C /* RandomLocationRepository.swift */; };
+		9117456C25D76063003F836C /* RandomLocationRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117456B25D76063003F836C /* RandomLocationRepositoryImpl.swift */; };
+		9117457125D76C6B003F836C /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117457025D76C6B003F836C /* DoubleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		9117453925D724C7003F836C /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
 		9117453E25D724EC003F836C /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		9117454325D7303D003F836C /* WeatherFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFlowCoordinator.swift; sourceTree = "<group>"; };
+		9117456125D75E7F003F836C /* GetLocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationUseCase.swift; sourceTree = "<group>"; };
+		9117456625D75FD6003F836C /* RandomLocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomLocationRepository.swift; sourceTree = "<group>"; };
+		9117456B25D76063003F836C /* RandomLocationRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomLocationRepositoryImpl.swift; sourceTree = "<group>"; };
+		9117457025D76C6B003F836C /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				911744B725D5D0DB003F836C /* FetchWeatherUseCase.swift */,
+				9117456125D75E7F003F836C /* GetLocationUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -246,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				911744BE25D5D1B6003F836C /* WeatherAPIRepository.swift */,
+				9117456625D75FD6003F836C /* RandomLocationRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -263,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				911744C825D5DDAC003F836C /* WeatherAPIRepositoryImpl.swift */,
+				9117456B25D76063003F836C /* RandomLocationRepositoryImpl.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -308,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				9117450E25D5E77F003F836C /* UILabelExtension.swift */,
+				9117457025D76C6B003F836C /* DoubleExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -467,6 +479,7 @@
 				911744C925D5DDAC003F836C /* WeatherAPIRepositoryImpl.swift in Sources */,
 				9117454425D7303D003F836C /* WeatherFlowCoordinator.swift in Sources */,
 				911744D325D5DE49003F836C /* APIEndpoint.swift in Sources */,
+				9117456225D75E7F003F836C /* GetLocationUseCase.swift in Sources */,
 				911744BF25D5D1B6003F836C /* WeatherAPIRepository.swift in Sources */,
 				911744B825D5D0DB003F836C /* FetchWeatherUseCase.swift in Sources */,
 				9117443B25D5BAAE003F836C /* WeatherViewController.swift in Sources */,
@@ -477,10 +490,13 @@
 				9117453A25D724C7003F836C /* AppFlowCoordinator.swift in Sources */,
 				9117443725D5BAAE003F836C /* AppDelegate.swift in Sources */,
 				9117452B25D6F46A003F836C /* LocationCoordinates.swift in Sources */,
+				9117457125D76C6B003F836C /* DoubleExtension.swift in Sources */,
 				9117443925D5BAAE003F836C /* SceneDelegate.swift in Sources */,
 				9117450F25D5E77F003F836C /* UILabelExtension.swift in Sources */,
 				9117453525D721D9003F836C /* StoryboardInstantiable.swift in Sources */,
 				911744D825D5DEA7003F836C /* Decode.swift in Sources */,
+				9117456725D75FD6003F836C /* RandomLocationRepository.swift in Sources */,
+				9117456C25D76063003F836C /* RandomLocationRepositoryImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

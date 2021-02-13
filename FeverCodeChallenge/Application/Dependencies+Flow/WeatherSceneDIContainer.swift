@@ -19,17 +19,25 @@ final class WeatherSceneDIContainer {
     }
     
     func makeWeatherListViewModel() -> WeatherViewModel {
-        return WeatherViewModelImpl(fetchWeatherUseCase: makeWeatherUseCase())
+        return WeatherViewModelImpl(fetchWeatherUseCase: makeWeatherUseCase(), getLocationUseCase: makeLocationUseCase())
     }
     
     // MARK: - Use Cases
     func makeWeatherUseCase() -> FetchWeatherUseCase {
-        return FetchWeatherUseCaseImpl(repository: makeWeatherAPIRepository())
+        return FetchWeatherUseCaseImpl(fetchWeatherRepository: makeWeatherAPIRepository())
+    }
+    
+    func makeLocationUseCase() -> GetLocationUseCase {
+        return GetLocationUseCaseImpl(randomLocationRepository: makeRandomLocationRepository())
     }
     
     // MARK: - Repositories
     func makeWeatherAPIRepository() -> WeatherAPIRepository {
         return WeatherAPIRepositoryImpl()
+    }
+    
+    func makeRandomLocationRepository() -> RandomLocationRepository {
+        return RandomLocationRepositoryImpl()
     }
     
     // MARK: - Flow Coordinators

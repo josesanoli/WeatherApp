@@ -22,6 +22,7 @@ protocol WeatherViewModel: WeatherViewModelInput, WeatherViewModelOutput { }
 final class WeatherViewModelImpl: WeatherViewModel {
     
     private let fetchWeatherUseCase: FetchWeatherUseCase
+    private let getLocationUseCase: GetLocationUseCase
     
     // MARK: - OUTPUT
 
@@ -30,18 +31,23 @@ final class WeatherViewModelImpl: WeatherViewModel {
     
     // MARK: - Init
 
-    init(fetchWeatherUseCase: FetchWeatherUseCase) {
+    init(fetchWeatherUseCase: FetchWeatherUseCase, getLocationUseCase: GetLocationUseCase) {
         self.fetchWeatherUseCase = fetchWeatherUseCase
+        self.getLocationUseCase = getLocationUseCase
     }
     
     
     // MARK: - Private
 
     private func getLocation() {
-        //New location
-        let coordinates = LocationCoordinates(latitude: 40.4165, longitude: -3.70256)
-        //Fetch weather
-        fetchWeatherUseCase.getLocationWeather(requestValue: coordinates, completion: { [weak self] result in
+        getLocationUseCase.getRandomLocation(completion: { result in
+            self.getWeather(location: result)
+        })
+
+    }
+    
+    private func getWeather(location: LocationCoordinates) {
+        fetchWeatherUseCase.getLocationWeather(requestValue: location, completion: { [weak self] result in
             DispatchQueue.main.async {
                 //Update result
                 switch result {
@@ -52,7 +58,6 @@ final class WeatherViewModelImpl: WeatherViewModel {
                 }
             }
         })
-
     }
     
     

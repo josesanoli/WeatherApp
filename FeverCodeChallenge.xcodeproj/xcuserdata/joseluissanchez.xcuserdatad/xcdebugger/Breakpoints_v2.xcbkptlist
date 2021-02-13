@@ -71,16 +71,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5165F04D-21CB-4F4F-824F-C01E49D34E9D"
+            uuid = "D3F2AAA0-69B1-4ACF-9E26-CEC915BB06B8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FeverCodeChallenge/Presentation/WeatherScene/ViewModel/WeatherViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "getLocation()"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getWeather(location:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D3F2AAA0-69B1-4ACF-9E26-CEC915BB06B8 - 5593e802d16fa694"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FeverCodeChallenge.WeatherViewModelImpl.(getWeather in _31A5B4B9521889E780C4AAB84B03804D)(location: FeverCodeChallenge.LocationCoordinates) -&gt; ()"
+                  moduleName = "FeverCodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joseluissanchez/Proyects/FeverCodeChallenge/FeverCodeChallenge/Presentation/WeatherScene/ViewModel/WeatherViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  uuid = "D3F2AAA0-69B1-4ACF-9E26-CEC915BB06B8 - c23d0fdd1e0ec663"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;FeverCodeChallenge.WeatherResponse, Swift.Error&gt;) -&gt; () in FeverCodeChallenge.WeatherViewModelImpl.(getWeather in _31A5B4B9521889E780C4AAB84B03804D)(location: FeverCodeChallenge.LocationCoordinates) -&gt; ()"
+                  moduleName = "FeverCodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joseluissanchez/Proyects/FeverCodeChallenge/FeverCodeChallenge/Presentation/WeatherScene/ViewModel/WeatherViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "143">
+               </Location>
+               <Location
+                  uuid = "D3F2AAA0-69B1-4ACF-9E26-CEC915BB06B8 - 6083cb661192503c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Result&lt;FeverCodeChallenge.WeatherResponse, Swift.Error&gt;) -&gt; () in FeverCodeChallenge.WeatherViewModelImpl.(getWeather in _31A5B4B9521889E780C4AAB84B03804D)(location: FeverCodeChallenge.LocationCoordinates) -&gt; ()"
+                  moduleName = "FeverCodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joseluissanchez/Proyects/FeverCodeChallenge/FeverCodeChallenge/Presentation/WeatherScene/ViewModel/WeatherViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "177">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D228C51-AE12-4467-8530-75FD9C84CF50"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FeverCodeChallenge/Data/Repositories/RandomLocationRepositoryImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getRandomLocation(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
