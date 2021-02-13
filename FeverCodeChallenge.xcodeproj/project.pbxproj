@@ -19,9 +19,9 @@
 		911744B225D5D08A003F836C /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911744B125D5D08A003F836C /* WeatherResponse.swift */; };
 		911744B825D5D0DB003F836C /* FetchWeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911744B725D5D0DB003F836C /* FetchWeatherUseCase.swift */; };
 		911744BF25D5D1B6003F836C /* WeatherAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911744BE25D5D1B6003F836C /* WeatherAPIRepository.swift */; };
-		911744C925D5DDAC003F836C /* WeatherRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911744C825D5DDAC003F836C /* WeatherRepositoryImpl.swift */; };
+		911744C925D5DDAC003F836C /* WeatherAPIRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911744C825D5DDAC003F836C /* WeatherAPIRepositoryImpl.swift */; };
 		911744D325D5DE49003F836C /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911744D225D5DE49003F836C /* APIEndpoint.swift */; };
-		911744D825D5DEA7003F836C /* ParseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911744D725D5DEA7003F836C /* ParseJSON.swift */; };
+		911744D825D5DEA7003F836C /* Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911744D725D5DEA7003F836C /* Decode.swift */; };
 		911744DD25D5DED0003F836C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 911744DC25D5DED0003F836C /* Localizable.strings */; };
 		9117450F25D5E77F003F836C /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117450E25D5E77F003F836C /* UILabelExtension.swift */; };
 		9117451725D5E7C0003F836C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117451625D5E7C0003F836C /* Button.swift */; };
@@ -70,9 +70,9 @@
 		911744B125D5D08A003F836C /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		911744B725D5D0DB003F836C /* FetchWeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWeatherUseCase.swift; sourceTree = "<group>"; };
 		911744BE25D5D1B6003F836C /* WeatherAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIRepository.swift; sourceTree = "<group>"; };
-		911744C825D5DDAC003F836C /* WeatherRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryImpl.swift; sourceTree = "<group>"; };
+		911744C825D5DDAC003F836C /* WeatherAPIRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIRepositoryImpl.swift; sourceTree = "<group>"; };
 		911744D225D5DE49003F836C /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
-		911744D725D5DEA7003F836C /* ParseJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseJSON.swift; sourceTree = "<group>"; };
+		911744D725D5DEA7003F836C /* Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decode.swift; sourceTree = "<group>"; };
 		911744DC25D5DED0003F836C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9117450E25D5E77F003F836C /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		9117451625D5E7C0003F836C /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
@@ -262,7 +262,7 @@
 		911744C725D5DD7A003F836C /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				911744C825D5DDAC003F836C /* WeatherRepositoryImpl.swift */,
+				911744C825D5DDAC003F836C /* WeatherAPIRepositoryImpl.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 		911744D125D5DE02003F836C /* DataMapping */ = {
 			isa = PBXGroup;
 			children = (
-				911744D725D5DEA7003F836C /* ParseJSON.swift */,
+				911744D725D5DEA7003F836C /* Decode.swift */,
 			);
 			path = DataMapping;
 			sourceTree = "<group>";
@@ -464,7 +464,7 @@
 			files = (
 				9117453025D7203C003F836C /* WeatherSceneDIContainer.swift in Sources */,
 				9117452325D5ED76003F836C /* Observable.swift in Sources */,
-				911744C925D5DDAC003F836C /* WeatherRepositoryImpl.swift in Sources */,
+				911744C925D5DDAC003F836C /* WeatherAPIRepositoryImpl.swift in Sources */,
 				9117454425D7303D003F836C /* WeatherFlowCoordinator.swift in Sources */,
 				911744D325D5DE49003F836C /* APIEndpoint.swift in Sources */,
 				911744BF25D5D1B6003F836C /* WeatherAPIRepository.swift in Sources */,
@@ -480,7 +480,7 @@
 				9117443925D5BAAE003F836C /* SceneDelegate.swift in Sources */,
 				9117450F25D5E77F003F836C /* UILabelExtension.swift in Sources */,
 				9117453525D721D9003F836C /* StoryboardInstantiable.swift in Sources */,
-				911744D825D5DEA7003F836C /* ParseJSON.swift in Sources */,
+				911744D825D5DEA7003F836C /* Decode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

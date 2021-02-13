@@ -41,15 +41,16 @@ final class WeatherViewModelImpl: WeatherViewModel {
         //New location
         let coordinates = LocationCoordinates(latitude: 40.4165, longitude: -3.70256)
         //Fetch weather
-        fetchWeatherUseCase.getLocationWeather(requestValue: coordinates, completion: { result in
-            //Update result
-            switch result {
-            case .success(let weatherData):
-                self.weatherData.value = weatherData
-            case .failure(let error):
-                self.error.value = error.localizedDescription
+        fetchWeatherUseCase.getLocationWeather(requestValue: coordinates, completion: { [weak self] result in
+            DispatchQueue.main.async {
+                //Update result
+                switch result {
+                case .success(let weatherData):
+                    self?.weatherData.value = weatherData
+                case .failure(let error):
+                    self?.error.value = error.localizedDescription
+                }
             }
-            
         })
 
     }

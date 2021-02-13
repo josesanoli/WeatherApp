@@ -14,7 +14,7 @@ enum WeatherAPIResponse {
 }
 
 protocol WeatherAPIRepository {
-    func getLocationWeather(latitude: Float, logitude: Float, completion: @escaping (Result<WeatherResponse, Error>) -> Void)
+    func getLocationWeather(latitude: Double, longitude: Double, completion: @escaping (Result<WeatherResponse, Error>) -> Void)
 }
 
 

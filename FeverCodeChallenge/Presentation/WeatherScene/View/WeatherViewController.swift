@@ -49,7 +49,7 @@ final class WeatherViewController: UIViewController, StoryboardInstantiable {
     }
     
     private func updateItems() {
-        cityLabel.text = viewModel.weatherData.value?.city
+        cityLabel.text = viewModel.weatherData.value?.name
     }
     
     private func showError(_ error: String) {

@@ -23,7 +23,7 @@ final class FetchWeatherUseCaseImpl: FetchWeatherUseCase {
     
     func getLocationWeather(requestValue: LocationCoordinates, completion: @escaping (Result<WeatherResponse, Error>) -> Void) {
         return repository.getLocationWeather(latitude: requestValue.latitude,
-                                                logitude: requestValue.longitude,
+                                                longitude: requestValue.longitude,
                                                 completion: { result in
 
 
