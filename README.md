@@ -1,18 +1,18 @@
 
 # WeatherApp
 
-iOS application that provides the weather in a random location through coordinates. WeatherApp uses the data http://openweathermap.org/current API to get the information to show.
-Just tap the button to get a new location weather.
+WeatherApp is an iOS application that provides the weather in a random location through coordinates. WeatherApp uses the data http://openweathermap.org/current API to get the information to show.
+Just tap the button to get a new location weather. If there is a city in the location the app show its name, else the coordinates will be shown.
 
 
 ### ChangeLog
-1.0: (14-2-2021)
+1.0.0: (14-2-2021)
 * Initial release
 
 ### Installation and use
 Download the project and run WeatherApp target to launch the app.
 
-### Running the test
+### Running the tests
 On Xcode, go to Test Navigator in the left navigation menu, and press the Run button on the test you want to execute.
 Also go to Product -> Test, to launch all tests.
 
