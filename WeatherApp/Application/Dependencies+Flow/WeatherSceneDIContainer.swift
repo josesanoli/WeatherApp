@@ -9,16 +9,14 @@ import UIKit
 
 final class WeatherSceneDIContainer {
     
-    init() {
-        
-    }
+    init() { }
     
     // MARK: - Weather Scene
     func makeWeatherViewController() -> WeatherViewController {
-        return WeatherViewController.create(with: makeWeatherListViewModel())
+        return WeatherViewController.create(with: makeWeatherViewModel())
     }
     
-    func makeWeatherListViewModel() -> WeatherViewModel {
+    func makeWeatherViewModel() -> WeatherViewModel {
         return WeatherViewModelImpl(fetchWeatherUseCase: makeWeatherUseCase(), getLocationUseCase: makeLocationUseCase())
     }
     

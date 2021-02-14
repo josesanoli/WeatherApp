@@ -16,8 +16,8 @@ public extension Double {
 
     /// Random double between 0 and n-1.
     ///
-    /// - Parameter n:  Interval max
-    /// - Returns:      Returns a random double point number between 0 and n max
+    /// - Parameter Double:  Interval min and max
+    /// - Returns:           Returns a random double point number between 0 and n max
     static func random(min: Double, max: Double) -> Double {
         return Double.random * (max - min) + min
     }

@@ -70,9 +70,8 @@ final class WeatherViewModelImpl: WeatherViewModel {
 
 extension WeatherViewModelImpl {
     
+    //New location button pressed
     func getNewLocation() {
-        //New location button pressed
         getLocation()
-        
     }
 }

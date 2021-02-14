@@ -11,7 +11,6 @@ final class AppDIContainer {
     
     // MARK: - DIContainers of scenes
     func makeWeatherSceneDIContainer() -> WeatherSceneDIContainer {
-        
         return WeatherSceneDIContainer()
     }
 }

@@ -24,9 +24,7 @@ final class WeatherFlowCoordinator {
     }
     
     func start() {
-        // Note: here we keep strong reference with actions, this way this flow do not need to be strong referenced
         let vc = dependencies.makeWeatherViewController()
-
         navigationController?.pushViewController(vc, animated: false)
         weatherVC = vc
     }

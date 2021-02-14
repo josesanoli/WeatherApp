@@ -257,9 +257,9 @@
 		911744B025D5D050003F836C /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				918E948025D84112006F3975 /* WeatherData.swift */,
 				911744B125D5D08A003F836C /* WeatherResponse.swift */,
 				9117452A25D6F46A003F836C /* LocationCoordinates.swift */,
-				918E948025D84112006F3975 /* WeatherData.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";

@@ -14,7 +14,6 @@ protocol FetchWeatherUseCase {
 
 final class FetchWeatherUseCaseImpl: FetchWeatherUseCase {
     
-    
     private let fetchWeatherRepository: WeatherAPIRepository
     
     init(fetchWeatherRepository: WeatherAPIRepository) {

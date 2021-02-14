@@ -45,12 +45,12 @@ final class WeatherViewController: UIViewController, StoryboardInstantiable {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
+    // MARK: - Private
+    
     private func bind(to viewModel: WeatherViewModel) {
         viewModel.weatherData.observe(on: self) { [weak self] _ in self?.updateItems() }
         viewModel.error.observe(on: self) { [weak self] in self?.emptyState($0) }
     }
-    
-    // MARK: - Private
     
     private func setupViews() {
         newLocationButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)

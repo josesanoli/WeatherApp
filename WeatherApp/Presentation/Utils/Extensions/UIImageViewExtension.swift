@@ -8,6 +8,10 @@
 import UIKit
 
 extension UIImageView {
+    /// Download image from url
+    ///
+    /// - Parameter url: Url where image is located
+    /// - Returns:       Image in task data response
     func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
         contentMode = mode
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -22,6 +26,11 @@ extension UIImageView {
             }
         }.resume()
     }
+    
+    /// Download image from string
+    ///
+    /// - Parameter link: String where image is located
+    /// - Returns:        Image in task data response
     func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
         guard let url = URL(string: link) else { return }
         downloaded(from: url, contentMode: mode)
