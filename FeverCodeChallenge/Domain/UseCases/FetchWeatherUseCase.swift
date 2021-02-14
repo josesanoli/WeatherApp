@@ -34,7 +34,8 @@ final class FetchWeatherUseCaseImpl: FetchWeatherUseCase {
                                                windSpeed: response.wind.speed,
                                                clouds: response.clouds.all,
                                                country: response.sys.country,
-                                               city: response.name)
+                                               city: response.name,
+                                               pressure: response.main.pressure)
                 completion(.success(weatherData))
             case .failure(let error):
                 completion(.failure(error))

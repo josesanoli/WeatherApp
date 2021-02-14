@@ -6,6 +6,16 @@
   
 */
 
-
+"tap_button" = "Tap button to get a random location weather";
 "new_location_button_text" = "New location";
 "location_far_from_any_named_place" = "Location without name";
+"title_text" = "Weather in:";
+"latitude" = "Latitude";
+"longitude" = "Longitude";
+"cloudiness" = "Cloudiness";
+"wind_speed" = "Wind speed";
+"humidity" = "Humidity";
+"pressure" = "Pressure";
+
+
+"generic_error" = "Data could not be obtained";

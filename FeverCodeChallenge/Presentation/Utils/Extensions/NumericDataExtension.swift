@@ -25,6 +25,10 @@ public extension Double {
     func toString() -> String {
         return String(format: "%.4f",self)
     }
+    
+    func toString2Dec() -> String {
+        return String(format: "%.2f",self)
+    }
 }
 
 public extension Int {

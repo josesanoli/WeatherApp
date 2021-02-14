@@ -57,8 +57,8 @@ final class WeatherViewModelImpl: WeatherViewModel {
                 switch result {
                 case .success(let weatherData):
                     self?.weatherData.value = weatherData
-                case .failure(let error):
-                    self?.error.value = error.localizedDescription
+                case .failure:
+                    self?.error.value = localizedString("generic_error")
                 }
             }
         })

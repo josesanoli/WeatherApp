@@ -17,6 +17,7 @@ struct WeatherData {
     let clouds: Int
     let country: String?
     let city: String
+    let pressure: Int
 }
 
 // MARK: - ErrorData

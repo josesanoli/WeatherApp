@@ -22,7 +22,7 @@ class WeatherViewModelTests: XCTestCase {
         
         var expectation: XCTestExpectation?
         var error: NetworkError?
-        var weatherData = WeatherData(lon: -23, lat: 43, description: "Test description", icon: "01", temp: 278, humidity: 60, windSpeed: 3.4, clouds: 20, country: "US", city: "City Test")
+        var weatherData = WeatherData(lon: -23, lat: 43, description: "Test description", icon: "01", temp: 278, humidity: 60, windSpeed: 3.4, clouds: 20, country: "US", city: "City Test", pressure: 1024)
         
         func getLocationWeather(requestValue: LocationCoordinates, completion: @escaping (Result<WeatherData, NetworkError>) -> Void) {
             if let error = error {
@@ -67,7 +67,7 @@ class WeatherViewModelTests: XCTestCase {
         
         // then
         waitForExpectations(timeout: 5, handler: nil)
-        XCTAssertEqual(viewModel.error.value, NetworkError.notConnected.localizedDescription)
+        XCTAssertEqual(viewModel.error.value, localizedString("generic_error"))
     }
     
 }

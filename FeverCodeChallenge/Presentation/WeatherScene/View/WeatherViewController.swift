@@ -9,14 +9,16 @@ import UIKit
 
 final class WeatherViewController: UIViewController, StoryboardInstantiable {
 
-    
+    @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var cityLabel: UILabel!
     @IBOutlet private weak var latitudeLabel: UILabel!
     @IBOutlet private weak var longitudeLabel: UILabel!
     @IBOutlet private weak var weatherDescriptionLabel: UILabel!
     @IBOutlet private weak var temperatureLabel: UILabel!
     @IBOutlet private weak var cloudsLabel: UILabel!
+    @IBOutlet private weak var windSpeedLabel: UILabel!
     @IBOutlet private weak var humidityLabel: UILabel!
+    @IBOutlet private weak var pressureLabel: UILabel!
     @IBOutlet private weak var newLocationButton: Button!
     
     private var viewModel: WeatherViewModel!
@@ -44,7 +46,7 @@ final class WeatherViewController: UIViewController, StoryboardInstantiable {
 
     private func bind(to viewModel: WeatherViewModel) {
         viewModel.weatherData.observe(on: self) { [weak self] _ in self?.updateItems() }
-        viewModel.error.observe(on: self) { [weak self] in self?.showError($0) }
+        viewModel.error.observe(on: self) { [weak self] in self?.emptyState($0) }
     }
     
     // MARK: - Private
@@ -59,25 +61,40 @@ final class WeatherViewController: UIViewController, StoryboardInstantiable {
     }
     
     private func updateItems() {
-        cityLabel.text = viewModel.weatherData.value?.city
-        latitudeLabel.text = viewModel.weatherData.value?.lat.toString()
-        longitudeLabel.text = viewModel.weatherData.value?.lon.toString()
-        weatherDescriptionLabel.text = viewModel.weatherData.value?.description.capitalizingFirstLetter()
-        temperatureLabel.text = viewModel.weatherData.value?.temp.kelvinToCelsius()
-        cloudsLabel.text = viewModel.weatherData.value?.clouds.toString()
-        humidityLabel.text = viewModel.weatherData.value?.humidity.toString()
+        if let values = viewModel.weatherData.value {
+            titleLabel.text = localizedString("title_text")
+            if !values.city.isEmpty {
+                cityLabel.text = values.city
+                latitudeLabel.text = ""
+                longitudeLabel.text = ""
+            } else {
+                cityLabel.text = ""
+                latitudeLabel.text = localizedString("latitude") + ": " + values.lat.toString()
+                longitudeLabel.text = localizedString("longitude") + ": " + values.lon.toString()
+            }
         
+            temperatureLabel.text =  values.temp.kelvinToCelsius() + "ºC"
+            weatherDescriptionLabel.text = values.description.capitalizingFirstLetter()
+            cloudsLabel.text = values.clouds.toString() + "%"
+            windSpeedLabel.text = values.windSpeed.toString2Dec() + " m/s"
+            humidityLabel.text = values.humidity.toString() + "%"
+            pressureLabel.text = values.pressure.toString() + " hPa"
+        } else {
+            emptyState(localizedString("tap_button"))
+        }
     }
     
-    private func showError(_ error: String) {
-        guard !error.isEmpty else { return }
+    private func emptyState(_ message: String) {
+        titleLabel.text = message.isEmpty ? localizedString("tap_button") : message
         cityLabel.text = "-"
-        latitudeLabel.text = "-"
-        longitudeLabel.text = "-"
+        latitudeLabel.text = ""
+        longitudeLabel.text = ""
         weatherDescriptionLabel.text = "-"
         temperatureLabel.text = "-"
         cloudsLabel.text = "-"
+        windSpeedLabel.text = "-"
         humidityLabel.text = "-"
+        pressureLabel.text = "-"
     }
 }
 

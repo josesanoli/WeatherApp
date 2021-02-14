@@ -54,6 +54,7 @@
 		918E94C025D875D1006F3975 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E94BF25D875D1006F3975 /* JsonData.swift */; };
 		918E94C425D87830006F3975 /* WeatherAPIRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911744C825D5DDAC003F836C /* WeatherAPIRepositoryImpl.swift */; };
 		918E94C825D879E0006F3975 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911744D225D5DE49003F836C /* APIEndpoints.swift */; };
+		918E94CF25D8B17E006F3975 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E944F25D80D0D006F3975 /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -596,6 +597,7 @@
 				918E947C25D83F23006F3975 /* NetworkService.swift in Sources */,
 				918E946E25D83D64006F3975 /* FetchWeatherUseCaseTest.swift in Sources */,
 				918E94C025D875D1006F3975 /* JsonData.swift in Sources */,
+				918E94CF25D8B17E006F3975 /* StringExtensions.swift in Sources */,
 				918E949525D85B15006F3975 /* WeatherViewModelTest.swift in Sources */,
 				918E948D25D84D32006F3975 /* WeatherData.swift in Sources */,
 				918E94B825D87177006F3975 /* WeatherAPIRepositoryTest.swift in Sources */,
