@@ -15,6 +15,7 @@ final class WeatherViewController: UIViewController, StoryboardInstantiable {
     @IBOutlet private weak var longitudeLabel: UILabel!
     @IBOutlet private weak var weatherDescriptionLabel: UILabel!
     @IBOutlet private weak var temperatureLabel: UILabel!
+    @IBOutlet private weak var weatherIconImageView: UIImageView!
     @IBOutlet private weak var cloudsLabel: UILabel!
     @IBOutlet private weak var windSpeedLabel: UILabel!
     @IBOutlet private weak var humidityLabel: UILabel!
@@ -74,6 +75,7 @@ final class WeatherViewController: UIViewController, StoryboardInstantiable {
             }
         
             temperatureLabel.text =  values.temp.kelvinToCelsius() + "ºC"
+            weatherIconImageView.downloaded(from: API_ICON_ENDPOINT + values.icon + "@2x.png")
             weatherDescriptionLabel.text = values.description.capitalizingFirstLetter()
             cloudsLabel.text = values.clouds.toString() + "%"
             windSpeedLabel.text = values.windSpeed.toString2Dec() + " m/s"
@@ -91,6 +93,7 @@ final class WeatherViewController: UIViewController, StoryboardInstantiable {
         longitudeLabel.text = ""
         weatherDescriptionLabel.text = "-"
         temperatureLabel.text = "-"
+        weatherIconImageView.image = nil
         cloudsLabel.text = "-"
         windSpeedLabel.text = "-"
         humidityLabel.text = "-"

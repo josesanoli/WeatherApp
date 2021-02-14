@@ -55,6 +55,7 @@
 		918E94C425D87830006F3975 /* WeatherAPIRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911744C825D5DDAC003F836C /* WeatherAPIRepositoryImpl.swift */; };
 		918E94C825D879E0006F3975 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911744D225D5DE49003F836C /* APIEndpoints.swift */; };
 		918E94CF25D8B17E006F3975 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E944F25D80D0D006F3975 /* StringExtensions.swift */; };
+		918E94D425D8B684006F3975 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E94D325D8B684006F3975 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		918E949425D85B15006F3975 /* WeatherViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModelTest.swift; sourceTree = "<group>"; };
 		918E94B725D87177006F3975 /* WeatherAPIRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIRepositoryTest.swift; sourceTree = "<group>"; };
 		918E94BF25D875D1006F3975 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
+		918E94D325D8B684006F3975 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +344,7 @@
 				9117450E25D5E77F003F836C /* UILabelExtension.swift */,
 				9117457025D76C6B003F836C /* NumericDataExtension.swift */,
 				918E944F25D80D0D006F3975 /* StringExtensions.swift */,
+				918E94D325D8B684006F3975 /* UIImageViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				9117453525D721D9003F836C /* StoryboardInstantiable.swift in Sources */,
 				918E945025D80D0D006F3975 /* StringExtensions.swift in Sources */,
 				9117456725D75FD6003F836C /* RandomLocationRepository.swift in Sources */,
+				918E94D425D8B684006F3975 /* UIImageViewExtension.swift in Sources */,
 				9117456C25D76063003F836C /* RandomLocationRepositoryImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
