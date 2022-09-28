@@ -59,8 +59,8 @@ final class WeatherViewModelImpl: WeatherViewModel {
                     self?.weatherData.value = weatherData
                 case .failure (let errorResponse):
                     switch errorResponse {
-                    case .error (let errorReason):
-                        if (((errorReason.message)?.contains("Invalid API key")) != nil) {
+                    case .error ( _, let message):
+                        if (((message)?.contains("Invalid API key")) != nil) {
                             self?.error.value = localizedString("apy_key_error")
                         } else {
                             self?.error.value = localizedString("generic_error")
