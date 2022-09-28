@@ -18,3 +18,4 @@
 
 
 "generic_error" = "Data could not be obtained";
+"apy_key_error" = "A valid API KEY is needed";
