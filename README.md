@@ -5,8 +5,10 @@ WeatherApp is an iOS application that provides the weather in a random location 
 Just tap the button to get a new location weather. If there is a city in the location the app show its name, else the coordinates will be shown.
 
 ### API Key
-You will need to provide API KEY to fetch the data from Weather API
+You will need to provide API KEY to fetch the data from Weather API.
+
 First, Signup at https://openweathermap.org/ and get your API KEY.
+
 Then, copy the Key and write it in APIEndpoints.swift file at API_KEY constant.
 
 ### ChangeLog
